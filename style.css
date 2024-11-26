@@ -456,21 +456,35 @@ footer .contact .call {
 
 footer .logo p {
     margin-top: 20px;
+    font-weight: normal;
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 400px) {
+    body {
+        width: 400px;
 
-   header {
-    width: 700px;
+    }
 
-   }
-   .banner_cards h1{
-    font-size:4`0px;
-   }
-   .banner .btns {
-    width: 100%;
-    display: flex;
-    gap: 30px;
-justify-content: space-between;   }
-   }  
+    footer {
+        width: 100%;
+    }
+
+    .banner {
+        align-items: center;
+        padding-left: 100px;
+    }
+
+    .katalog .items .blok {
+        grid-template-columns: repeat(2, 300px);
+    }
+
+    .katalog .items {
+        gap: 50px;
+    }
+
+    .banner .banner_cards {
+        flex-direction: column;
+    }
+    
+}
